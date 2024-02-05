@@ -16,9 +16,9 @@ class Giochi extends Prodotto
         $this->tipologia = $tipologia;
     }
 
-    // public function get()
-    // {
-    //     return $this->tipologia;
-    // }
+    public function get()
+    {
+        return $this->tipologia;
+    }
 
 }
