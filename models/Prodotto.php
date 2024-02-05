@@ -1,4 +1,6 @@
 <?php
+
+include("./Categoria.php");
 class Prodotto
 {
 
