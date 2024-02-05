@@ -10,15 +10,15 @@ class Giochi extends Prodotto
     {
         parent::__construct($prezzo, $titolo, $icona_categoria, $tipo_articolo, $immagine, $categoria);
 
-        $this->setPeso($tipologia);
+        $this->set($tipologia);
     }
 
-    public function setPeso($tipologia)
+    public function set($tipologia)
     {
         $this->tipologia = $tipologia;
     }
 
-    public function getPeso()
+    public function get()
     {
         return $this->tipologia;
     }

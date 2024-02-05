@@ -85,4 +85,9 @@ class Prodotto
     {
         return $this->categoria;
     }
+
+
+    protected function get(){
+        return "NIENTE";
+    }
 }

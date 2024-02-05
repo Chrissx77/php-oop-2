@@ -10,15 +10,15 @@ class Cucce extends Prodotto
     {
         parent::__construct($prezzo, $titolo, $icona_categoria, $tipo_articolo, $immagine, $categoria);
 
-        $this->setPeso($dimensione);
+        $this->set($dimensione);
     }
 
-    public function setPeso($dimensione)
+    public function set($dimensione)
     {
         $this->dimensione = $dimensione;
     }
 
-    public function getPeso()
+    public function get()
     {
         return $this->dimensione;
     }

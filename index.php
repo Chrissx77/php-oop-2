@@ -33,14 +33,22 @@
                         echo $prod->getIcon();
                         ?>
                     </li>
+
                     <li class="list-group-item">
                         <?php
                         echo $prod->getTipo();
                         ?>
                     </li>
+
                     <li class="list-group-item">
                         <?php
                         echo $prod->getImmage();
+                        ?>
+                    </li>
+
+                    <li class="list-group-item">
+                        <?php
+                        echo $prod->get();
                         ?>
                     </li>
                 </ul>
