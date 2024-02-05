@@ -87,7 +87,7 @@ class Prodotto
     }
 
 
-    protected function get(){
+    public function get(){
         return "NIENTE";
     }
 }
