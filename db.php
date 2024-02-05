@@ -9,7 +9,7 @@ include("./models/Categoria.php");
 
 $array_prodotti = [
     
-    $prod1 = new Giochi("30$", "RoyalCanin", "icon_cat", "cibo", "img_prod", new Categoria("cane"), "pallina"),
+    $prod1 = new Giochi("30$", "RoyalCanin", "icon_cat", "giochi", "img_prod", new Categoria("cane"), "pallina"),
 
     $prod2 = new Cibo("30$", "RoyalCanin", "icon_cat", "cibo", "img_prod", new Categoria("gatto"),"15kg"),
 

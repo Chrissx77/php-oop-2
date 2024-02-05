@@ -1,7 +1,5 @@
 <?php
 
-include("./Prodotto.php");
-
 class Giochi extends Prodotto
 {
     private $tipologia;
@@ -18,8 +16,9 @@ class Giochi extends Prodotto
         $this->tipologia = $tipologia;
     }
 
-    public function get()
-    {
-        return $this->tipologia;
-    }
+    // public function get()
+    // {
+    //     return $this->tipologia;
+    // }
+
 }

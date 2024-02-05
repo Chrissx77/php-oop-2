@@ -1,7 +1,5 @@
 <?php
 
-include("./Prodotto.php");
-
 class Cucce extends Prodotto
 {
     private $dimensione;

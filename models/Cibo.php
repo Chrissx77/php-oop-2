@@ -1,7 +1,5 @@
 <?php
 
-include("./Prodotto.php");
-
 class Cibo extends Prodotto
 {
 
