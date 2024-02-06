@@ -13,7 +13,7 @@ class Cibo extends Prodotto
 
     public function set($peso)
     {
-        $this->peso = $peso;
+        $this->peso = $peso; 
     }
 
     public function get()

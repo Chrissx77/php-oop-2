@@ -1,15 +1,11 @@
 <?php
 
 include("./Categoria.php");
+include("./models/Traits.php");
 class Prodotto
 {
 
-    private $prezzo;
-    private $titolo;
-    private $icona_categoria;
-    private $tipo_articolo;
-    private $immagine;
-    private $categoria;
+   use params_prod;
 
     public function __construct($prezzo, $titolo, $icona_categoria, $tipo_articolo, $immagine, $categoria)
     {
@@ -31,6 +27,8 @@ class Prodotto
 
     public function setTitolo($titolo)
     {
+        if(!is_string($titolo) or strlen($titolo) < 3)
+            throw new Exception("Titolo is not a valid titolo");
         $this->titolo = $titolo;
     }
 
@@ -87,7 +85,8 @@ class Prodotto
     }
 
 
-    public function get(){
+    public function get()
+    {
         return "NIENTE";
     }
 }
